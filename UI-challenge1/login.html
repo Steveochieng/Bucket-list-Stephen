@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--start head-->
+
+  <title>login page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+	<script src="js/jquery.min.js"></script>
+  	<link rel="stylesheet" href="css/bootstrap.min.css">
+  	<script src="js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  	<link rel="stylesheet" type="text/css" href="css/style.css">
+  
+</head>
+
+<!--start head-->
+<!--start body-->
+
+<body>
+<div class="container-fluid" id="home">
+<div class="nav">
+  <ul>
+    <a href="index.html"><li>Home</li></a>
+    <a href="html/buckets.html"><li>Buckets</li></a>
+    <a href="html/explore.html"><li>Explore</li></a>
+  </ul>
+</div>
+
+
+<div class="container">
+	<div class="col-md-5"></div>
+	<div class="col-md-3" id="h1">
+		<h1>BUCKET LIST</h1>
+	</div>
+	<div class="col-md-4"></div>
+</div>
+
+
+
+<div class="words">
+
+<p>Make your plans reality by recording your plans in bucket list.</p>
+</div>
+
+<!--start login page form-->
+
+<div class="w3-container">
+
+<div class="col-md-4"></div>
+<div class="col-md-4"><div class="button"><button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green w3-large">Login</button></div></div>
+<div class="col-md-4"></div>
+ 
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+        
+      </div>
+
+      <form class="w3-container" action="/action_page.php">
+        <div class="w3-section">
+          <label><b>Username</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+          <label><b>Password</b></label>
+          <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="psw" required>
+          <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Login</button>
+          <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
+        </div>
+      </form>
+
+      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+        <a href="html/register.html"><button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Register</button></a>
+        <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--end login page form-->
+
+</div>
+
+<!--end body-->
+
+</body>
+</html>
